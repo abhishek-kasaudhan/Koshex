@@ -1,0 +1,48 @@
+.content-body {
+  width: 100%;
+  margin-left: 230px;
+  .header {
+    border-bottom: 1px solid #e5e6e9;
+    padding: 74px 30px 15px;
+    display: flex;
+    justify-content: space-between;
+    .greetings {
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 16px;
+      letter-spacing: 0.5px;
+      text-transform: capitalize;
+      color: #121212;
+    }
+    .menu-icons {
+      display: flex;
+      width: 200px;
+      justify-content: space-around;
+    }
+    .menu {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      background-color: #e8eeff;
+      border-radius: 50%;
+      img {
+        max-width: 50%;
+        object-fit: contain;
+      }
+    }
+    .profile {
+      background-color: white;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+  }
+}

@@ -1,0 +1,119 @@
+.investor-details {
+  background: #ffffff;
+  border: 1px solid #e7eaf3;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+  border-radius: 7px;
+  margin-top: 30px;
+
+  .investor-header {
+    display: flex;
+    padding: 18px 18px 0;
+    .title {
+      width: 60%;
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 0.5px;
+      text-transform: capitalize;
+      color: #343756;
+      align-self: center;
+    }
+    input {
+      padding: 6px 10px;
+      height: 8px;
+      vertical-align: sub;
+      background: #f4f7ff;
+      border: none;
+      color: #557aff;
+    }
+    .search {
+      margin-right: 10px;
+    }
+    .button {
+      padding: 6px 10px;
+      margin-right: 10px;
+      background: #f4f7ff;
+      border-radius: 3px;
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 13px;
+      letter-spacing: 0.5px;
+      text-transform: capitalize;
+      min-width: 50px;
+      color: #557aff;
+      text-align: center;
+      align-self: center;
+      select {
+        background: #f4f7ff;
+        border: none;
+        color: #557aff;
+      }
+    }
+    .mututal-funds {
+      min-width: 100px;
+    }
+  }
+
+  .investor-table {
+    margin: 15px 6px;
+    background: #ffffff;
+    border: 1px solid #e7eaf3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 7px;
+    .table-row {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      padding: 12px 0;
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 400;
+      // font-size: 10px;
+      line-height: 16px;
+      text-transform: capitalize;
+      color: #303030;
+    }
+    .investment-table-header {
+      width: 100%;
+      display: flex;
+      padding: 20px 0;
+      border-bottom: 1px dashed #e9e9ea;
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 600;
+      line-height: 13px;
+      letter-spacing: 0.5px;
+      text-transform: capitalize;
+      color: #121212;
+    }
+    .name,
+    .investment,
+    .sip,
+    .transactions,
+    .status {
+      width: 20%;
+      .active {
+        background: #e7f3eb;
+        border: 0.7px solid #51ac70;
+        border-radius: 4px;
+        color: #51ac70;
+        padding: 6px 21px;
+        margin: 0 30px;
+        cursor: pointer;
+      }
+      .inactive {
+        background: #fdf5eb;
+        border: 0.7px solid #ed9c3a;
+        border-radius: 4px;
+        color: #ed9c3a;
+        padding: 6px 21px;
+        margin: 0 30px;
+        cursor: pointer;
+      }
+    }
+  }
+}

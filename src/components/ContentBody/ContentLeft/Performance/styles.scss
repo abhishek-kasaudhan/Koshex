@@ -1,0 +1,114 @@
+.performance-wrapper {
+  background: #ffffff;
+  border: 1px solid #e7eaf3;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+  border-radius: 7px;
+  margin-bottom: 30px;
+  .performace-heading {
+    padding: 25px;
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    color: #343756;
+    border-bottom: 1px dashed #e1e2e3;
+    position: relative;
+    .option-wrapper {
+      position: absolute;
+      right: 25px;
+      top: 15px;
+
+      select {
+        margin-left: 15px;
+        background: #f4f7ff;
+        border-radius: 3px;
+        padding: 9px 12px;
+      }
+    }
+  }
+
+  .performance-content {
+    width: 100%;
+    display: flex;
+    .performance-content-left {
+      width: 55%;
+      min-height: 50px;
+      border-right: 1px dashed #e1e2e3;
+      display: flex;
+      justify-content: center;
+      img {
+        max-width: 80%;
+        object-fit: contain;
+      }
+    }
+    .performance-content-right {
+      width: 45%;
+      min-height: 50px;
+      padding: 18px;
+
+      .option-selector {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        .option {
+          padding: 10px 20px;
+          cursor: pointer;
+          background-color: #f4f7ff;
+          color: #557aff;
+        }
+        .selected {
+          background-color: #557aff;
+          color: white;
+          box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+          border-radius: 7px;
+        }
+      }
+      .matrix-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2%;
+        gap: 4%;
+        grid-auto-columns: minmax(0, 1fr);
+        margin: auto;
+        width: 80%;
+        margin: 28px auto 10px;
+        .matrix {
+          cursor: pointer;
+          text-align: center;
+          padding: 21px 16px;
+          background: #f4f7ff;
+          margin-bottom: 10px;
+          border: 1px solid #e7eaf3;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+          border-radius: 7px;
+
+          .matrix-name {
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 16px;
+            letter-spacing: 0.5px;
+            text-transform: capitalize;
+
+            color: #343756;
+          }
+
+          .matrix-value {
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 16px;
+            margin-top: 10px;
+            letter-spacing: 0.5px;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}

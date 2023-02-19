@@ -1,0 +1,54 @@
+.sip-wrapper {
+  background: #ffffff;
+  border: 1px solid #e7eaf3;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+  border-radius: 7px;
+  margin: 15px 6px;
+  display: flex;
+
+  .sip-left {
+    width: 70%;
+    .sip-heading {
+      padding: 25px;
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 0.5px;
+      text-transform: capitalize;
+      color: #343756;
+      border-bottom: 1px dashed #e1e2e3;
+    }
+    .sip-content {
+      padding: 15px;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  .sip-right {
+    width: 30%;
+    border-left: 1px dashed #e1e2e3;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    img {
+      object-fit: contain;
+      max-width: 80%;
+    }
+    .total-sips {
+      position: absolute;
+      top: 42%;
+      text-align: center;
+
+      .sip-amount {
+        font-size: 25px;
+        font-weight: 600;
+      }
+
+      .sip-label {
+        font-size: 12px;
+      }
+    }
+  }
+}

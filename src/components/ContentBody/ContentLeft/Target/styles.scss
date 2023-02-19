@@ -1,0 +1,57 @@
+.target-wrapper {
+  background: #ffffff;
+  border: 1px solid #e7eaf3;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+  border-radius: 7px;
+  margin-bottom: 30px;
+  display: flex;
+
+  .target-left {
+    width: 70%;
+    .heading {
+      padding: 25px;
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 0.5px;
+      text-transform: capitalize;
+      color: #343756;
+      border-bottom: 1px dashed #e1e2e3;
+    }
+    .content {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2%;
+      gap: 2%;
+      grid-auto-columns: minmax(0, 1fr);
+    }
+  }
+  .target-right {
+    width: 30%;
+    border-left: 1px dashed #e1e2e3;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .total-target {
+      position: absolute;
+      top: 42%;
+      text-align: center;
+
+      .target-amount {
+        font-size: 25px;
+        font-weight: 600;
+      }
+
+      .target-label {
+        font-size: 12px;
+      }
+    }
+    img {
+      object-fit: contain;
+      max-width: 80%;
+    }
+  }
+}

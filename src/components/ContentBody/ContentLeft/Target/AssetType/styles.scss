@@ -1,0 +1,106 @@
+.asset-type-wrapper {
+  background: #ffffff;
+  border: 1px solid #e7eaf3;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  position: relative;
+  padding: 10px 12px;
+  height: 70px;
+  margin-bottom: 7px;
+  .more-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+  }
+  .img-icon-options {
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    cursor: pointer;
+    .img-icon-option {
+      padding: 8px 20px;
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 13px;
+      letter-spacing: 0.391892px;
+      text-transform: capitalize;
+      color: #343756;
+      right: 0;
+    }
+    .option-selected {
+      background: #f3f6ff;
+      border-radius: 3px;
+    }
+  }
+  .asset-header {
+    display: flex;
+    align-self: center;
+    .img-icon {
+      width: 40px;
+      height: 40px;
+      background: #ebf0ff;
+      border-radius: 3px;
+      margin-right: 12px;
+      display: flex;
+      justify-content: center;
+      img {
+        max-width: 60%;
+        object-fit: contain;
+      }
+    }
+    .asset-name {
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 16px;
+      letter-spacing: 0.5px;
+      align-self: center;
+      text-transform: capitalize;
+      color: #343756;
+    }
+  }
+  .asset-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -6px;
+    .asset-left {
+      width: 60%;
+      align-self: center;
+      img {
+        width: 130px;
+      }
+    }
+    .asset-right {
+      width: 40%;
+      text-align: right;
+      .asset-right-value {
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+        color: #121212;
+      }
+      .asset-right-label {
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-transform: lowercase;
+        color: #636f86;
+      }
+    }
+  }
+}
