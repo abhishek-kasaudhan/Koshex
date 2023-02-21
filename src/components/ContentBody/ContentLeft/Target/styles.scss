@@ -29,12 +29,17 @@
       grid-auto-columns: minmax(0, 1fr);
     }
   }
+  
   .target-right {
     width: 30%;
     border-left: 1px dashed #e1e2e3;
     display: flex;
     justify-content: center;
     position: relative;
+    .chart{
+      position: absolute;
+      top: 14%;
+    }
     .total-target {
       position: absolute;
       top: 42%;

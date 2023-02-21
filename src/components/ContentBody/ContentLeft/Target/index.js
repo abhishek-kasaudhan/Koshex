@@ -6,8 +6,17 @@ import Bonds from "../../../../static/Bonds.png";
 import AssetType from "./AssetType/index.js";
 import ProgressBar from "../../../../static/Rectangle-blue.png";
 import "./styles.scss";
+import Chart from 'react-apexcharts'
+import { useState } from "react";
 
 const Target = () => {
+  const [options,setOptions]=useState({legend : {show: false},dataLabels : {
+    enabled: false},colors: ['#2E93fA', '#66DA26', '#546E7A', '#E91E63', '#FF9800'],plotOptions: {
+      pie: {
+        customScale: 1
+      }
+    }})
+  const[series,setSeries]=useState([30, 20,28,22])
   return (
     <div className="target-wrapper">
       <div className="target-left">
@@ -20,7 +29,9 @@ const Target = () => {
         </div>
       </div>
       <div className="target-right">
-        <img src={TargetEllipse} />
+        <div className="chart">
+      <Chart options={options} series={series} type="donut" width="300"  />
+      </div>
         <div className="total-target">
           <div className="target-amount">1.00L</div>
           <div className="target-label">This Month</div>
