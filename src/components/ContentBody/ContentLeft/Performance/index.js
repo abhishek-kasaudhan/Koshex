@@ -30,13 +30,19 @@ const Performance = () => {
     type: 'bar',
     height: 350,
     stacked: true,
+    toolbar: {
+      show: true,
+      tools: {
+        download: false
+      }
+    }
   },
   plotOptions: {
     bar: {
       horizontal: false,
       dataLabels: {
         total: {
-          enabled: true,
+          enabled: false,
           offsetX: 0,
           style: {
             fontSize: '13px',
@@ -46,26 +52,66 @@ const Performance = () => {
       }
     },
   },
+  dataLabels: {
+    enabled: false
+  },
+  grid: {
+    show: true,
+    borderColor: '#90A4AE',
+    strokeDashArray: 5,
+    position: 'back',
+    xaxis: {
+        lines: {
+            show: false
+        }
+    },   
+    yaxis: {
+        lines: {
+            show: true,
+            
+        }
+    },  
+    row: {
+        colors: undefined,
+        opacity: 0.5
+    },  
+    column: {
+        colors: undefined,
+        opacity: 0.5
+    },  
+    padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+    },  
+},
+
   stroke: {
     width: 1,
     colors: ['#fff']
   },
   title: {
-    text: 'Fiction Books Sales'
+    text: undefined
   },
   xaxis: {
-    categories: [2008, 2009, 2010, 2011, 2012, 2013, 2014],
+    categories: ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'],
+    axisTicks: {
+      show: false,
+  },
     labels: {
       formatter: function (val) {
-        return val + "K"
+        return val
       }
     }
   },
   yaxis: {
+    show: false,
     title: {
       text: undefined
     },
   },
+  
   tooltip: {
     y: {
       formatter: function (val) {
@@ -77,14 +123,12 @@ const Performance = () => {
     opacity: 1
   },
   legend: {
-    position: 'top',
-    horizontalAlign: 'left',
-    offsetX: 40
+    show: false,
   }
   })
   const[series,setSeries]=useState([{
     name: 'Marine Sprite',
-    data: [44, 55, 41, 37, 22, 43, 21]
+    data: [44, 55, 41, 37, 22, 43, 21,44, 55, 41, 37, 22]
   }, {
     name: 'Striking Calf',
     data: [53, 32, 33, 52, 13, 43, 32]
@@ -97,7 +141,7 @@ const Performance = () => {
   }, {
     name: 'Reborn Kid',
     data: [25, 12, 19, 32, 25, 24, 10]
-  }])
+  },])
 
   const constructPerformaceMatrix = () => {
     return matrix.map((val) => {
@@ -135,7 +179,8 @@ const Performance = () => {
               options={options}
               series={series}
               type="bar"
-              width="500"
+              width="360"
+              height='360'
             />
 
         </div>
