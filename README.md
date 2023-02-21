@@ -1,4 +1,4 @@
 ## Deployed on Netlify-
- https://koshex-abhishek.netlify.app/
+https://abhishek-koshex.netlify.app/
  
 Web Page
