@@ -1,8 +1,25 @@
 import Ellipse from "../../../../../static/Ellipse.png";
 import SipCard from "../SipCard";
+import Chart from 'react-apexcharts'
 import "./styles.scss";
+import { useState } from "react";
 
 const Sip = () => {
+  const [options,setOptions]=useState({
+    legend : {show: false},
+    stroke: {
+      colors: ["transparent"],
+      width: 0
+    },
+    dataLabels : {
+    enabled: false},
+    colors: ['#5E7AF7','#E1A04F'],
+    plotOptions: {
+      pie: {
+        customScale: 1
+      }
+    }})
+  const[series,setSeries]=useState([47,53])
   return (
     <div className="sip-wrapper">
       <div className="sip-left">
@@ -25,7 +42,9 @@ const Sip = () => {
         </div>
       </div>
       <div className="sip-right">
-        <img src={Ellipse} />
+        <div className="chart">
+      <Chart options={options} series={series} type="donut" width="300"  />
+      </div>
         <div className="total-sips">
           <div className="sip-amount">1.00L</div>
           <div className="sip-label">Total SIPs</div>

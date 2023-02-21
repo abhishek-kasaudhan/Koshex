@@ -55,10 +55,11 @@ const Performance = () => {
   dataLabels: {
     enabled: false
   },
+  colors: ['#E5F6FE','#F2F0FE','#FDF2DE','#ECF0FE'],
   grid: {
     show: true,
     borderColor: '#90A4AE',
-    strokeDashArray: 5,
+    strokeDashArray: 2,
     position: 'back',
     xaxis: {
         lines: {
@@ -86,9 +87,8 @@ const Performance = () => {
         left: 0
     },  
 },
-
   stroke: {
-    width: 1,
+    width: 0,
     colors: ['#fff']
   },
   title: {
@@ -110,12 +110,12 @@ const Performance = () => {
     title: {
       text: undefined
     },
+    
   },
-  
   tooltip: {
     y: {
       formatter: function (val) {
-        return val + "K"
+        return val 
       }
     }
   },
@@ -128,20 +128,17 @@ const Performance = () => {
   })
   const[series,setSeries]=useState([{
     name: 'Marine Sprite',
-    data: [44, 55, 41, 37, 22, 43, 21,44, 55, 41, 37, 22]
+    data: [5,5,10,10,8,10,8,5,6,5,5,5]
   }, {
     name: 'Striking Calf',
-    data: [53, 32, 33, 52, 13, 43, 32]
+    data: [4,4,4,4,4,4,4,4,4,4,4,4]
   }, {
     name: 'Tank Picture',
-    data: [12, 17, 11, 9, 15, 11, 20]
+    data: [3,3,4,4,4,3,3,3,3,3,3,3]
   }, {
     name: 'Bucket Slope',
-    data: [9, 7, 5, 8, 6, 9, 4]
-  }, {
-    name: 'Reborn Kid',
-    data: [25, 12, 19, 32, 25, 24, 10]
-  },])
+    data: [2,2,3,3,3,2,2,2,2,2,2,2]
+  }])
 
   const constructPerformaceMatrix = () => {
     return matrix.map((val) => {
@@ -179,8 +176,8 @@ const Performance = () => {
               options={options}
               series={series}
               type="bar"
-              width="360"
-              height='360'
+              width="380"
+              height='300'
             />
 
         </div>

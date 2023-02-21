@@ -37,8 +37,9 @@
     justify-content: center;
     position: relative;
     .chart{
+      transform: rotateY(0deg) rotate(180deg);
       position: absolute;
-      top: 14%;
+      top: 12%;
     }
     .total-target {
       position: absolute;

@@ -36,6 +36,11 @@
       object-fit: contain;
       max-width: 80%;
     }
+    .chart{
+      transform: rotateY(0deg) rotate(180deg);
+      position: absolute;
+      top: 6%;
+    }
     .total-sips {
       position: absolute;
       top: 42%;

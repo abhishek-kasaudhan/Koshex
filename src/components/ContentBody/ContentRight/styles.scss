@@ -30,3 +30,9 @@
     margin: 40px 0;
   }
 }
+@media only screen and (max-width: 600px) {
+  .content-right-wrapper {
+    width: 100%;
+    margin-left: 20px;
+  }
+}

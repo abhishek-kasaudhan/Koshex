@@ -46,3 +46,11 @@
     display: flex;
   }
 }
+@media only screen and (max-width: 600px) {
+  .content-body{
+    width: auto;
+    .content{
+      flex-direction: column;
+    }
+  }
+}

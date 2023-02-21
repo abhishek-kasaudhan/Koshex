@@ -10,13 +10,21 @@ import Chart from 'react-apexcharts'
 import { useState } from "react";
 
 const Target = () => {
-  const [options,setOptions]=useState({legend : {show: false},dataLabels : {
-    enabled: false},colors: ['#2E93fA', '#66DA26', '#546E7A', '#E91E63', '#FF9800'],plotOptions: {
+  const [options,setOptions]=useState({
+    legend : {show: false},
+    stroke: {
+      colors: ["transparent"],
+      width: 0
+    },
+    dataLabels : {
+    enabled: false},
+    colors: ['#5E7AF7','#E1A04F','#7C6AF6','#6CABF8'],
+    plotOptions: {
       pie: {
         customScale: 1
       }
     }})
-  const[series,setSeries]=useState([30, 20,28,22])
+  const[series,setSeries]=useState([35, 25,32,20])
   return (
     <div className="target-wrapper">
       <div className="target-left">
